@@ -119,7 +119,6 @@ function Hero() {
             <a key={name} href={href} target="_blank" rel="noreferrer" aria-label={name}>
               <span className="social-mark">{short}</span>
               <span>{name}</span>
-              <span className="social-arrow" aria-hidden="true">↗</span>
             </a>
           ))}
         </nav>

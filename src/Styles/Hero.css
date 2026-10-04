@@ -245,10 +245,6 @@
   font-weight: 600;
 }
 
-.social-arrow {
-  color: #d5a84f;
-}
-
 @media (max-width: 850px) {
   .hero {
     height: 650px;

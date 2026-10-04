@@ -73,9 +73,9 @@ export default function ContactPage() {
 
           <article className="contact-card">
             <span className="contact-tag">Email</span>
-            <h3>hello@tmstylesandstrands.com</h3>
+            <h3>tomiwapelumi2@gmail.com</h3>
             <p>For bookings, custom requests and business enquiries.</p>
-            <a href="mailto:hello@tmstylesandstrands.com">Email us</a>
+            <a href="mailto:tomiwapelumi2@gmail.com">Email us</a>
           </article>
         </div>
       </div>
