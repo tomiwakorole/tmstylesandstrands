@@ -1,0 +1,123 @@
+.about-page {
+  padding-top: 110px;
+}
+
+.section-heading {
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #d5a84f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(54px, 6vw, 118px);
+  line-height: 0.9;
+  letter-spacing: -3px;
+  max-width: 1180px;
+}
+
+.about-copy-wrap {
+  max-width: 100%;
+}
+
+.about-copy {
+  color: #e6d7c9;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  max-width: 100%;
+  width: 100%;
+}
+
+.about-copy p {
+  margin: 0 0 20px;
+  max-width: 1180px;
+  font-size: clamp(15px, 1.4vw, 22px);
+  line-height: 1.6;
+}
+
+
+.stats-panel {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+  align-items: end;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 140px;
+  padding: 18px 12px 0;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: statFadeIn 0.7s ease forwards;
+}
+
+.stat-box strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(40px, 3.3vw, 62px);
+  color: #d7a958;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  transition: color 0.25s ease;
+}
+
+.stat-box span {
+  color: #e6d7c9;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  max-width: 150px;
+  line-height: 1.5;
+}
+
+.stat-box:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.stat-box:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.stat-box:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+@keyframes statFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 850px) {
+  .about-page {
+    padding-top: 76px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .stats-panel {
+    grid-template-columns: 1fr;
+  }
+}
